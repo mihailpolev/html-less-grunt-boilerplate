@@ -3992,6 +3992,14 @@ html {
     width: calc(100% - 16px);
   }
 }
+.svg-svg--cart {
+  background: url("svg/sprite.css-4ae4bb73.svg") no-repeat;
+  background-position: 0 0;
+}
+.svg-svg--cart-dims {
+  width: 810px;
+  height: 810px;
+}
 /***svg***/
 /***png***/
 @-webkit-keyframes fadeIn {
