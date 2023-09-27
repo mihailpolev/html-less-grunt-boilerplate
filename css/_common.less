@@ -1,0 +1,61 @@
+/**
+ * Общие стили
+ **/
+html {
+  height: 100%;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: @background;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  font-family: @font;
+  font-weight: 400;
+  min-width: 320px;
+  zoom: 1;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  min-width: 320px;
+
+  .screen-tablet({
+
+  });
+}
+
+.header {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0;
+  position: relative;
+}
+
+.footer {
+  height: 1208px;
+
+  .screen-desktop-large({
+    height: auto;
+  });
+
+  .container {
+    width: 1632px;
+
+    .screen-desktop-large({
+      width: calc(~'100% - 16px');
+    });
+  }
+}
